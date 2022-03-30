@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import HeaderComponent from "./components/header/HeaderComponent";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './style.css'
+import FooterComponent from "./components/footer/FooterComponent";
+import ContentComponent from "./components/content/ContentComponent";
+import useWindowDimensions from './useWindowDimension'
 function App() {
+
+  const { height, width } = useWindowDimensions();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div style={{ width: width, height: height }}>
+      <HeaderComponent />
+      <ContentComponent />
+      <FooterComponent />
     </div>
   );
 }

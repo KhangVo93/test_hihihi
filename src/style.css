@@ -1,0 +1,58 @@
+.header {
+    background-color: #fff;
+    padding: 20px 100px;
+    box-shadow: 0px 2px 10px rgb(14 80 164 / 30%);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+}
+.logoHeader {
+    cursor: pointer;
+    object-fit: contain;
+    max-height: 70px;
+}
+
+.footer {
+    background-color: rgba(14,80,164,.08);
+    color: #0e50a4;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+}
+
+p {
+    font-size: 13px;
+}
+
+.login {
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0px 2px 10px rgb(14 80 164 / 30%);
+    border-radius: 10px;
+    margin: auto;
+}
+.dieukhoan{
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.loginContainer{
+    padding: 50px;
+    background: rgba(14,80,164,.08);
+    border-radius: 10px;
+    /* height: 500px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.btnLogin{
+    font-size: 14px; 
+    border: 1px solid rgb(255, 255, 255); 
+    background-color: #fff;
+    border-radius: 10px; 
+    color: rgb(0, 0, 0); 
+    /* padding: 10px 20px; */
+}
